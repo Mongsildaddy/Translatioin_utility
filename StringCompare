@@ -1,0 +1,48 @@
+package TranslationUtilities;
+
+import java.awt.List;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.StringTokenizer;
+
+
+public class Stringcompare {
+	String text;
+	String text2;
+	String resulttext;
+	String gettext;
+	
+	public void Comparing() {
+		//Tokenize the comparing text and input word count to 'wordcount'
+			StringTokenizer st = new StringTokenizer(text2);
+			int wordcount = st.countTokens();
+
+		//Input tokenized thext to the Array, then convert the array to ArrayList	
+			String[] arr = new String[wordcount];
+			ArrayList resulttext = new ArrayList();
+
+			
+			int idx = 0;
+			
+			while (st.hasMoreTokens()) {
+				arr[idx] = st.nextToken();
+				idx++;
+			}
+			
+			// Keep comparing two sentences
+			int i;
+			for (i = 0; i < arr.length; i++) {
+			
+			if (text.contains(arr[i])) {
+			} else {
+				resulttext.add(arr[i]);
+				gettext = resulttext.toString();
+
+			
+			}
+	
+			}
+			}
+	
+
+	}
