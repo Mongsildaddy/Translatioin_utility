@@ -1,0 +1,14 @@
+package TranslationUtilities;
+
+import java.util.Scanner;
+public class Htmlremover {
+		public static String htmltext;
+		String result;
+
+		
+		public void Tagremove() {
+			this.result = htmltext.replaceAll("<[^>]*>", "");
+
+
+	}
+}
